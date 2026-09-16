@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-sans: var(--font-body);
+
+  --color-sage-50: #F0F9EE;
+  --color-sage-100: #D9F0D4;
+  --color-sage-200: #B8E0B1;
+  --color-sage-300: #90CB88;
+  --color-sage-500: #5CAF55;
+  --color-sage-600: #4A9E44;
+  --color-sage-700: #3A8235;
+  --color-sage-900: #1A4018;
+
+  --color-cream-50: #FAFDF9;
+  --color-cream-100: #F2F9EF;
+  --color-cream-200: #E8F5E4;
+  --color-cream-300: #D5EBD0;
+
+  --color-neutral-50: #F8F9F8;
+  --color-neutral-100: #EFF1EF;
+  --color-neutral-200: #DEE2DE;
+  --color-neutral-300: #C4CAC4;
+  --color-neutral-400: #9AA39A;
+  --color-neutral-500: #6B776B;
+  --color-neutral-600: #4E5C4E;
+  --color-neutral-700: #384038;
+  --color-neutral-900: #1A221A;
+
+  --color-success-50: #ECFDF5;
+  --color-success-600: #059669;
+  --color-warning-50: #FFFBEB;
+  --color-warning-600: #D97706;
+  --color-error-50: #FEF2F2;
+  --color-error-600: #DC2626;
+  --color-info-50: #EFF6FF;
+  --color-info-600: #2563EB;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+
+  --shadow-xs: 0 1px 2px 0 rgba(26, 34, 26, 0.04);
+  --shadow-focus: 0 0 0 3px rgba(74, 158, 68, 0.20);
+  --shadow-product: 0 8px 24px rgba(26, 34, 26, 0.08);
+}
+
+:root {
+  --color-page-bg: #E8F5E4;
+  --color-card-bg: #FFFFFF;
+  --color-sidebar-bg: #FFFFFF;
+  --color-border: #D5EBD0;
+  --color-border-strong: #DEE2DE;
+  --color-text-primary: #1A221A;
+  --color-text-secondary: #4E5C4E;
+  --color-text-muted: #9AA39A;
+}
+
+.dark {
+  --color-page-bg: #0D1A0D;
+  --color-card-bg: #131F13;
+  --color-sidebar-bg: #0F180F;
+  --color-border: #1E2E1E;
+  --color-border-strong: #2A3D2A;
+  --color-text-primary: #E8F5E4;
+  --color-text-secondary: #90AB90;
+  --color-text-muted: #5A7A5A;
+}
+
+body {
+  background-color: var(--color-page-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+:focus-visible { outline: 2px solid var(--color-sage-600); outline-offset: 2px; border-radius: var(--radius-sm); }
+::selection { background: var(--color-sage-100); color: var(--color-sage-900); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
