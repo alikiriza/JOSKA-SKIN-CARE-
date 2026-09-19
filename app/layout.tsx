@@ -19,19 +19,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: { default: "Joska Beauty — Natural Skincare", template: "%s | Joska Beauty" },
+  title: { default: "Joska Skin Care Products — Natural Skincare", template: "%s | Joska Skin Care Products" },
   description: "Premium natural skincare products handcrafted in Uganda. Organic, cruelty-free, and made with love for radiant, healthy skin.",
   icons: { icon: "/favicon.svg" },
   openGraph: {
-    title: "Joska Beauty — Natural Skincare",
+    title: "Joska Skin Care Products — Natural Skincare",
     description: "Premium natural skincare products handcrafted in Uganda. Organic, cruelty-free, and made with love.",
     type: "website",
     locale: "en_US",
-    siteName: "Joska Beauty",
+    siteName: "Joska Skin Care Products",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Joska Beauty — Natural Skincare",
+    title: "Joska Skin Care Products — Natural Skincare",
     description: "Premium natural skincare products handcrafted in Uganda.",
   },
   robots: { index: true, follow: true },

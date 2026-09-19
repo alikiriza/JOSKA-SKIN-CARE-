@@ -72,7 +72,7 @@ export function Sidebar({ navItems, type }: SidebarProps) {
           <Link href="/" className="flex items-center gap-2">
             <Leaf className="h-7 w-7 text-sage-600" strokeWidth={1.5} />
             {!collapsed && (
-              <span className="font-display text-xl font-bold text-sage-700">Joska</span>
+              <span className="font-display text-xl font-bold text-sage-700">Joska Skin Care</span>
             )}
           </Link>
         </div>
